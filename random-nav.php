@@ -24,7 +24,7 @@ table {
 </style>
 <div align="center">
 <?php
-$input_file = file('keywords.txt');
+$input_file = file('industrial-keywords.txt');
 echo ' <table>'."\r\n".'  <tr>'."\r\n";
 
 for ($i = 0; $i < 5; $i++) {
