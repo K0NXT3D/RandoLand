@@ -1,4 +1,4 @@
-# randoland
+# RandoLand
 Random Stuff That Does Random Stuff While Making Use Of Random Functions
 
 <p><b>Randomness..<b></p>
