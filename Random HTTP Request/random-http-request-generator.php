@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="style.css">
 <?php
 // For Testing Purposes Only
 // Generate Incoming Traffic Via HTTP Requests - Random Info Generator
