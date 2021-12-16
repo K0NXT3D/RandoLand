@@ -1,4 +1,4 @@
-Random HTTP Request Generator - "generator.php"
+<h2>Random HTTP Request Generator - <em>"generator.php"</em></h2>
 This generates the Header Request Information to be sent to Destination URL.
 For Testing Purposes Only - Some Files Have Been Excluded.
 The Destination URL trackes incoming HTTP Requests and filters them for "bad data" or
