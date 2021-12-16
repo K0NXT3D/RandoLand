@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <?php
 // For Testing Purposes Only
 // Generate Incoming Traffic Via HTTP Requests - Random Info Generator
@@ -24,14 +25,13 @@ $ocet2 = str_pad(mt_rand(0, 254), 3, '1', STR_PAD_LEFT);
 $ocet3 = str_pad(mt_rand(0, 254), 3, '1', STR_PAD_LEFT);
 $ocet4 = str_pad(mt_rand(0, 254), 3, '1', STR_PAD_LEFT);
 $ip = $ocet1.'.'.$ocet2.'.'.$ocet3.'.'.$ocet4;
-$hostip = str_replace (".", "-", $ip);
 
 // Generate Random Prefix and toss it into an Array.
 $prefix = $prefixes[array_rand($prefixes)];
 
 // Generate Random Hostname and toss it into an Array.
-$hostnameA = $randohost[array_rand($randohost)];
-$hostnameB = str_replace (".", "-", $hostnameA);
+$hostname = $randohost[array_rand($randohost)];
+$hostname = str_replace (".", "-", $hostname);
 $hostnameR = $randohost[array_rand($randohost)];
 
 // Select User Agents file and toss it into an Array.
@@ -50,14 +50,14 @@ $coord = $long.'.'.$dd1.', '.$lat.'.'.$dd2;
 // Build Strings
 $referrer = $prefix.$hostnameR.$pageref;
 $referrer = str_replace ("\n", "", $referrer); // Output Fix
-$uastring = $ip.' '.$ip.'.'.$hostnameB.' '.$referrer.' '.$useragent;
+$uastring = $ip.' '.$ip.'.'.$hostname.' '.$referrer.' '.$useragent;
 
 // Display Strings
 echo $uastring;
 echo "<p>IP Address: ".$ip."<br>";
-echo "Hostname: ".$ip.'.'.$hostnameB."<br>";
+echo "Hostname: ".$ip.'.'.$hostname."<br>";
 echo "Referrer: ".$referrer."<br>";
 echo "Browser: ".$useragent."<br>";
 echo "Geo-Location: <a href=\"https://www.google.com/maps/place/".$coord."\" target=\"_blank\" />".$coord."</a></p>";
-
+echo "<p><button onClick=\"window.location.href=window.location.href\"> Refresh </button></p>";
 ?>
