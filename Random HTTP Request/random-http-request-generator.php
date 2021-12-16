@@ -45,7 +45,7 @@ $long = str_pad(mt_rand(-90, 90), 2, '1', STR_PAD_LEFT);
 $dd1 = str_pad(mt_rand(0, 99999), 3, '1', STR_PAD_LEFT);
 $lat = str_pad(mt_rand(-90, 90), 2, '1', STR_PAD_LEFT);
 $dd2 = str_pad(mt_rand(0, 99999), 3, '1', STR_PAD_LEFT);
-$coord = $long.'.'.$dd1.', '.$lat.'.'.$dd1;
+$coord = $long.'.'.$dd1.', '.$lat.'.'.$dd2;
 
 // Build Strings
 $referrer = $prefix.$hostnameR.$pageref;
